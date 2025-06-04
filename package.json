@@ -1,0 +1,14 @@
+{
+  "name": "stocktree-project",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "backend": "cd stockTree && npm run dev",
+    "chat": "cd socket-chat && npm run dev",
+    "dev": "concurrently \"npm run backend\" \"npm run chat\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.10"
+  }
+}
